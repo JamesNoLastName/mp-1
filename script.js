@@ -41,8 +41,18 @@ function exponentF(){
     let numTwo = Number(document.getElementById("inputTwo").value);
     let numThree = numOne + numTwo;
     let val = 1;
+    // Turn exponent positive to run through the loop
+    let isNeg = 0;
+    if(numTwo < 0){
+        numTwo = numTwo * -1;
+        isNeg = 1;
+    }
     for (let i = 0; i < numTwo; i++) {
         val = val * numOne;
+    }
+    // If we set numTwo to positive to run the loop, we reciprocate our fraction
+    if(isNeg == 1){
+        val = 1 / val;
     }
     checkNegative(val);
     document.getElementById("output").innerText = String(val);
