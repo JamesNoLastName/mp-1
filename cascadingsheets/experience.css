@@ -113,7 +113,6 @@ main ul{
     padding: 2vh;
     border-radius: 1vw;
     justify-content: space-between;
-    min-width: 50vw;
     max-width: 100%;
     /** https://www.w3schools.com/css/css_list.asp **/
     list-style-position: inside;
@@ -145,7 +144,7 @@ main p:hover{
 
 #main-text{
     align-self: center;
-    width: 60%;
+    width: 100%;
     margin: 1vh 1vw;
 }
 

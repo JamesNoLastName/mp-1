@@ -114,9 +114,9 @@ main p{
     border-radius: 1vw;
     text-align: center;
     justify-content: space-between;
-    min-width: 50vw;
     max-width: 100%;
 }
+
 
 main p:hover{
     background-color: white;
@@ -139,11 +139,9 @@ main p:hover{
 
 #main-text{
     align-self: center;
-    width: 60%;
+    width: 100%;
     margin: 1vh 1vw;
 }
-
-
 
 #main-image{
     width: 100%;
@@ -152,7 +150,7 @@ main p:hover{
 }
 
 #main-title{
-    margin: 2vw 0;
+    margin: 1% 0 0;
     text-align: center;
     font-size: calc(2px + 2vw);
     color: white;

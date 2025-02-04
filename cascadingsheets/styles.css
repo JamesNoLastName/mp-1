@@ -8,7 +8,167 @@
     margin: 0 auto;
 }
 
-header{
+header{*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    #pagewrap{
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        padding: 1.5vh 1.5vw;
+        background: linear-gradient(-45deg, #002E5D, rgba(2,0,36,1), #2774ae, rgba(0,212,255,1));
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 10vh;
+        color: white;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+
+    #container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        background-color: black;
+    }
+
+    nav{
+        width: 30%;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: rgb(2,0,36);
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        font-size: calc(2vw + 10%);
+        text-align: center;
+        list-style: none;
+        padding-left: 0;
+        border-radius: 1vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        color: white;
+    }
+
+    nav li{
+        font-size: 2vw;
+        width: 90%;
+        /** https://gradient.page/ui-gradients/dark-blue-gradient8
+        This gradient reminds me of icebergs
+        **/
+        background: linear-gradient(
+                to right,
+                #2774ae,#002E5D,#002E5D
+        );
+        border-radius: 1vw;
+        padding: 2vh 0;
+        margin: 2.5vh auto;
+        color: white;
+        border-style: solid;
+    }
+
+    nav li:hover{
+        transform: scale(1.1);
+        background: black;
+    }
+
+    nav p{
+        color: white;
+    }
+
+    nav a{
+        text-decoration: none;
+        color: white;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width:70%;
+        background: linear-gradient(
+                to right,
+                #2774ae,#002E5D,#2774ae
+        );
+        border-radius: 1vw;
+        margin: 2vh 1vw 2vh auto;
+    }
+
+    main p{
+        margin: 0 0;
+        font-size: calc(2px + 2vw);
+        color: white;
+    }
+
+    #profile-image{
+        max-width: 100%;
+        border-radius: 1vw;
+        border-style: double;
+        border-color: blue;
+    }
+
+    #main{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 2vh 2vw;
+    }
+
+    #main-text{
+        align-self: center;
+        width: 100%;
+        margin: 1vh 1vw;
+    }
+
+    #main-image{
+        width: 100%;
+        margin: 1vh 1vw;
+        border-color: blue;
+    }
+
+    #main-title{
+        margin: 1% 0 0;
+        text-align: center;
+        font-size: calc(2px + 2vw);
+        color: white;
+    }
+
+    footer{
+        padding: 1vh 1vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #2774ae;
+        color: white;
+    }
+
+    footer a{
+        color: #002E5D;
+    }
+
+    #active{
+        background: black;
+    }
     display: flex;
     flex-direction: column;
     padding: 1.5vh 1.5vw;
@@ -105,7 +265,7 @@ main{
 }
 
 main p{
-    margin: 0 1vw;
+    margin: 0 0;
     font-size: calc(2px + 2vw);
     color: white;
 }
@@ -126,7 +286,7 @@ main p{
 
 #main-text{
     align-self: center;
-    width: 60%;
+    width: 100%;
     margin: 1vh 1vw;
 }
 
@@ -137,7 +297,7 @@ main p{
 }
 
 #main-title{
-    margin: 2vw 0;
+    margin: 1% 0 0;
     text-align: center;
     font-size: calc(2px + 2vw);
     color: white;
