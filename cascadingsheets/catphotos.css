@@ -19,6 +19,11 @@ header{
     color: white;
 }
 
+/** https://www.w3schools.com/cssref/atrule_keyframes.php
+basically, each percentage is a stage. at 50%, the background position changes, and reverts back to 0 50%.
+https://codepen.io/mike-schultz/pen/NgQvGO
+I got inspiration from this codepen. This effect was applied to the other pages as well.
+**/
 @keyframes gradient {
     0% {
         background-position: 0 50%;
@@ -190,6 +195,44 @@ a{
     00FF41
     https://www.schemecolor.com/matrix-code-green.php
     **/
+
+    * {
+        color: #00FF41;
+    }
+
+    table, td, tr{
+        color: #00FF41;
+        border-color: #00FF41;
+        font-size: calc(2vw + 10%);
+    }
+
+    main p{
+        border-color: #00FF41;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #00FF41;
+    }
+
+    header {
+        align-items: center;
+        color: #00FF41;
+        background: #0D0208;
+    }
+
+    p{
+        border-color: #00FF41;
+    }
+
+    main ul{
+        border-color: #00FF41;
+    }
+
+    td a{
+        color: #00FF41;
+    }
+
     header {
         align-items: center;
         color: #00FF41;
@@ -234,9 +277,7 @@ a{
     nav a {
         text-decoration: none;
     }
-}
 
-@media screen and (max-width: 1000px) {
     main{
         display: flex;
         flex-direction: column;

@@ -181,10 +181,34 @@ footer a{
     00FF41
     https://www.schemecolor.com/matrix-code-green.php
     **/
+
+    * {
+        color: #00FF41;
+    }
+
+    table, td, tr{
+        color: #00FF41;
+        border-color: #00FF41;
+        font-size: calc(2vw + 10%);
+    }
+
+    main p{
+        border-color: #00FF41;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #00FF41;
+    }
+
     header {
         align-items: center;
         color: #00FF41;
         background: #0D0208;
+    }
+
+    p{
+        border-color: #00FF41;
     }
 
     #container {
@@ -225,9 +249,7 @@ footer a{
     nav a {
         text-decoration: none;
     }
-}
 
-@media screen and (max-width: 1000px) {
     main{
         display: flex;
         flex-direction: column;

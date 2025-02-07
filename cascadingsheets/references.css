@@ -83,10 +83,6 @@ nav li:hover{
     background: black;
 }
 
-nav p{
-    color: white;
-}
-
 nav a{
     text-decoration: none;
     color: white;
@@ -156,16 +152,20 @@ footer a{
     color: #002E5D;
 }
 
+/**
+https://www.w3schools.com/howto/howto_css_table_center.asp
+Apparently using margin-left and margin-right will center a table. Very useful
+**/
 table, td, tr{
     color: white;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    margin: 1vh 1vw;
-    font-size: calc(2px + 1.5vw);
+    font-size: calc(1.5vw + 10%);
     border-style: solid;
     border-color: white;
-    padding: 2vh;
+    padding: 1vh;
     justify-content: space-between;
-    max-width: 100%;
 }
 
 a{
@@ -180,6 +180,25 @@ a{
     00FF41
     https://www.schemecolor.com/matrix-code-green.php
     **/
+
+    * {
+        color: #00FF41;
+    }
+
+    table, td, tr{
+        color: #00FF41;
+        border-color: #00FF41;
+        font-size: calc(2vw + 10%);
+    }
+
+    nav li{
+        color: #00FF41;
+    }
+
+    main p{
+        color: #00FF41;
+    }
+
     header {
         align-items: center;
         color: #00FF41;
@@ -219,18 +238,14 @@ a{
         margin: 1% .5%;
         background: #003B00;
         border-color: #00FF41;
+        color: #00FF41;
     }
 
     nav a {
         text-decoration: none;
+        color: #00FF41;
     }
-}
 
-#active{
-    background: black;
-}
-
-@media screen and (max-width: 1000px) {
     main{
         display: flex;
         flex-direction: column;
@@ -244,7 +259,7 @@ a{
 
     main p{
         margin: 2% 2%;
-        font-size: calc(2px + 3vw);
+        font-size: calc(2vw + 10%);
         color: #00FF41;
     }
 

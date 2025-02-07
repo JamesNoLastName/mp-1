@@ -29,18 +29,6 @@ header{*{
         color: white;
     }
 
-    @keyframes gradient {
-        0% {
-            background-position: 0 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0 50%;
-        }
-    }
-
     #container{
         width: 100%;
         display: flex;
@@ -177,6 +165,10 @@ header{*{
     animation: gradient 15s ease infinite;
     height: 10vh;
     color: white;
+}
+
+#subtext{
+    margin-left: 4vw;
 }
 
 @keyframes gradient {
@@ -328,6 +320,26 @@ footer a{
     00FF41
     https://www.schemecolor.com/matrix-code-green.php
     **/
+
+    * {
+        color: #00FF41;
+    }
+
+    table, td, tr{
+        color: #00FF41;
+        border-color: #00FF41;
+        font-size: calc(2vw + 10%);
+    }
+
+    main p{
+        color: #00FF41;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #00FF41;
+    }
+
     header {
         align-items: center;
         color: #00FF41;
@@ -359,6 +371,8 @@ footer a{
         margin-bottom: 0;
         border-radius: 0;
         background: #003B00;
+        color: #00FF41;
+
     }
 
     nav li {
@@ -367,14 +381,9 @@ footer a{
         margin: 1% .5%;
         background: #003B00;
         border-color: #00FF41;
+        color: #00FF41;
     }
 
-    nav a {
-        text-decoration: none;
-    }
-}
-
-@media screen and (max-width: 1000px) {
     main{
         display: flex;
         flex-direction: column;
