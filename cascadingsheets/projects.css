@@ -162,7 +162,7 @@ table, td, tr{
     font-size: calc(2px + 2vw);
     border-style: solid;
     border-color: white;
-    padding: 2vh;
+    padding: 1vh;
     justify-content: space-between;
     min-width: 10vw;
     max-width: 100%;
