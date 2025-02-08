@@ -147,6 +147,11 @@ h2{
     color: white;
 }
 
+#smalltex{
+    text-align: center;
+    font-size: calc(1vw + 10%);
+}
+
 #contact-info li {
     align-self: center;
     color: white;

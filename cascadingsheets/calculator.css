@@ -38,7 +38,7 @@ h2, h3 {
     color: black;
     width: 6vh;
     height: 6vh;
-    font-size: calc(0.75vw + 10%);
+    font-size: calc(1.5vw + 10%);
     margin: 5px;
     text-align: center;
     border-radius: 1vw;

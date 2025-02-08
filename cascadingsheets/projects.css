@@ -159,7 +159,6 @@ footer a{
 table, td, tr{
     color: white;
     text-align: center;
-    margin: 1vh 1vw;
     font-size: calc(2px + 2vw);
     border-style: solid;
     border-color: white;
@@ -167,6 +166,8 @@ table, td, tr{
     justify-content: space-between;
     min-width: 10vw;
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #active{
